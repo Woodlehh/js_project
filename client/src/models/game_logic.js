@@ -5,7 +5,7 @@ const GameView = require('../views/game.js');
 const GameLogic = function () {
   this.currentQuestionIndex = 0;
   this.questions = [];
-  this.request = new RequestHelper('http://localhost:3000/api/game');
+  this.request = new RequestHelper('/api/game');
 }
 
 GameLogic.prototype.isLastQuestion = function() {
