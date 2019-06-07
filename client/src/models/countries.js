@@ -39,8 +39,6 @@ Countries.prototype.createQuestionObject = function (countries) {
   let questionObject1 = this.random(countries);
   let questionObject2 = this.random(countries);
 
-  console.log(questionObject1);
-  console.log(questionObject2);
   if (questionObject1.name === questionObject2.name) {
     let questionObject2 = this.random(countries);
   }
