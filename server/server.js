@@ -10,7 +10,7 @@ app.use(express.static(publicPath));
 app.use(parser.json());
 
 
-MongoClient.connect('mongodb://localhost:27017')
+MongoClient.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017')
   .then( ( client ) => {
     const db = client.db('game');
     const bucketlistCollection = db.collection('question');
@@ -21,6 +21,6 @@ MongoClient.connect('mongodb://localhost:27017')
 
 
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
   console.log(`listening on port ${this.address().port}`);
 });
