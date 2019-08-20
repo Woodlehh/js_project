@@ -1,4 +1,4 @@
-# Educational Game
+# Educational Quiz
 
 Educational Game is a full stack JavaScript application with an Express server and MongoDB database.
 
