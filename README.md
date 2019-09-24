@@ -43,6 +43,4 @@ npm run server:dev
 The application is running on port 3000 so visit http://localhost:3000.
 
 
-##### Images of the app  
-
 ![Educational quiz screenshot](https://user-images.githubusercontent.com/45624717/65507132-2019dc00-dec5-11e9-86a8-c88a8793b2ca.jpg)
